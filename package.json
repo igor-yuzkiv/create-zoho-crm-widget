@@ -9,7 +9,9 @@
     ],
     "scripts": {
         "build": "tsc",
-        "dev": "tsc --watch"
+        "dev": "tsc --watch",
+        "format": "prettier --write .",
+        "lint": "eslint . --ext .ts"
     },
     "bin": {
         "create-zoho-crm-widget": "./dist/index.js"
