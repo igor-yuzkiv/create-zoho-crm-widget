@@ -70,8 +70,6 @@ async function main() {
     if (!targetDir) {
         const projectName = await text({
             message: 'Project name:',
-            placeholder: CURRENT_DIR_NAME,
-            initialValue: CURRENT_DIR_NAME,
             validate: (value) => {
                 return !value || formatTargetDir(value).length > 0 ? undefined : 'Invalid project name'
             },
