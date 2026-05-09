@@ -8,7 +8,7 @@
         "templates"
     ],
     "scripts": {
-        "prepare": "npm run build",
+        "prepare": "node node_modules/typescript/bin/tsc",
         "build": "tsc",
         "dev": "tsc --watch",
         "format": "prettier --write .",
