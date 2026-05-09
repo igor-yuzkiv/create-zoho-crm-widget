@@ -7,7 +7,6 @@ import { fileURLToPath } from 'node:url'
 import mri from 'mri'
 
 const CURRENT_DIR = process.cwd()
-const CURRENT_DIR_NAME = path.basename(CURRENT_DIR)
 const templatesDir = path.join(path.dirname(fileURLToPath(import.meta.url)), '../templates')
 const templates = fs.readdirSync(templatesDir)
 
