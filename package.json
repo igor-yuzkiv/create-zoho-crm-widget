@@ -8,6 +8,7 @@
     "main": "src/index.ts",
     "scripts": {
         "build": "tsc",
+        "prepare": "npm run build",
         "dev": "tsc --watch",
         "format": "prettier --write .",
         "lint": "eslint . --ext .ts",
