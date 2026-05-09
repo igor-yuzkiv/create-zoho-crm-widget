@@ -5,7 +5,6 @@ import path from 'path';
 import { fileURLToPath } from 'node:url';
 import mri from 'mri';
 const CURRENT_DIR = process.cwd();
-const CURRENT_DIR_NAME = path.basename(CURRENT_DIR);
 const templatesDir = path.join(path.dirname(fileURLToPath(import.meta.url)), '../templates');
 const templates = fs.readdirSync(templatesDir);
 const argv = mri(process.argv.slice(2), {
@@ -52,8 +51,6 @@ async function main() {
     if (!targetDir) {
         const projectName = await text({
             message: 'Project name:',
-            placeholder: CURRENT_DIR_NAME,
-            initialValue: CURRENT_DIR_NAME,
             validate: (value) => {
                 return !value || formatTargetDir(value).length > 0 ? undefined : 'Invalid project name';
             },
