@@ -14,10 +14,13 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
-        "@clack/prompts": "^1.3.0"
+        "@clack/prompts": "^1.3.0",
+        "fs-extra": "^11.3.5",
+        "mri": "^1.2.0"
     },
     "devDependencies": {
         "@eslint/js": "^10.0.1",
+        "@types/fs-extra": "^11.0.4",
         "@types/node": "^25.6.2",
         "eslint": "^10.3.0",
         "globals": "^17.6.0",
@@ -25,5 +28,8 @@
         "prettier": "3.8.3",
         "typescript": "^6.0.3",
         "typescript-eslint": "^8.59.2"
+    },
+    "bin": {
+        "zoho_crm_widget_scaffolding": "./dist/index.js"
     }
 }
