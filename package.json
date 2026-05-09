@@ -30,6 +30,6 @@
         "typescript-eslint": "^8.59.2"
     },
     "bin": {
-        "zoho_crm_widget_scaffolding": "./dist/index.js"
+        "create-zoho-crm-widget": "./dist/index.js"
     }
 }
